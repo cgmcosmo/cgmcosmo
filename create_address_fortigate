@@ -1,0 +1,17 @@
+objetos = open(r'C:\arquivos_python\projetos\QA\redes.txt')
+
+for i in objetos:
+    comandos = [
+        'config firewall address',
+        f'edit {i}',
+        f'set subnet {i}',
+        'next',
+        'end'
+    ]
+
+    config_address = comandos[0]
+    edit = comandos[1]
+    set_subnet = comandos[2]
+    next = comandos[3]
+    end = comandos[4]
+    print(f'{config_address}' '\n' f'{edit}'f'{set_subnet}'f'{next}' '\n'f'{end}')
