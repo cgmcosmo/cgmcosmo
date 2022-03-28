@@ -1,4 +1,4 @@
-objetos = open(r'C:\arquivos_python\projetos\QA\redes.txt')
+objetos = open(r'C:\arquivos_python\projetos\QA\redes.txt') # adicione os objetos no arquivo .txt
 
 for i in objetos:
     comandos = [
